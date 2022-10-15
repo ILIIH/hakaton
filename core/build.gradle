@@ -9,10 +9,9 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -26,25 +25,16 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        kotlinOptions {
-            freeCompilerArgs += [
-                    "-Xjvm-default=all",
-            ]
-            jvmTarget = '1.8'
-        }
-    }
-    buildFeatures {
-        viewBinding true
-        dataBinding true
+        jvmTarget = '1.8'
     }
 }
 
 dependencies {
-    implementation project(':core')
 
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
-    implementation 'com.facebook.android:facebook-android-sdk:9.1.1'
 
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.1'
+
+    api "io.insert-koin:koin-core:$koin_version"
 }
