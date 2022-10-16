@@ -15,4 +15,6 @@
     <string name="email">Email</string>
     <string name="term_conditions"><![CDATA[Term & Conditions]]></string>
     <string name="getting_started">Getting Started</string>
+    <string name="alrady_have_an_account">alrady have an account</string>
+    <string name="connect_with_facebook">Connect with facebook</string>
 </resources>

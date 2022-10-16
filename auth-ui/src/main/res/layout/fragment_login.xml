@@ -222,19 +222,8 @@
                 tools:ignore="TouchTargetSizeCheck" />
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/menu"
-                style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:gravity="end"
-                app:boxBackgroundColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/place_icon"
-                app:layout_constraintStart_toEndOf="@+id/place_icon">
 
 
-            </com.google.android.material.textfield.TextInputLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </layout>

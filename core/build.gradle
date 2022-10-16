@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        minSdk 21
+        minSdk 23
         targetSdk 32
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -35,6 +35,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.6.1'
 
-
+    api "io.insert-koin:koin-android:$koin_android_version"
     api "io.insert-koin:koin-core:$koin_version"
 }
