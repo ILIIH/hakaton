@@ -1,4 +1,4 @@
-package com.example.uaref.di
+package com.uaref.di
 
 import android.app.Application
 import org.koin.core.context.startKoin
