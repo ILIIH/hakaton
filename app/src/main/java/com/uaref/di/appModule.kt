@@ -1,4 +1,4 @@
-package com.example.uaref.di
+package com.uaref.di
 
 import org.koin.dsl.module
 
