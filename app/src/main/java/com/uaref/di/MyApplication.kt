@@ -1,14 +1,26 @@
 package com.uaref.di
 
 import android.app.Application
-import org.koin.core.context.startKoin
+import com.example.auth_data.di.authDataModule
+import com.example.auth_ui.di.authModule
+import org.koin.android.ext.koin.androidContext
+import org.koin.core.context.GlobalContext.startKoin
 
-class MyApplication:Application() {
+class MyApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
         startKoin {
-            modules(appModule)
+            androidContext(this@MyApplication)
+
+            modules(
+                appModule,
+                authModule,
+                authDataModule,
+                homeModule,
+                homeDomainModule,
+                homeDataModule,
+            )
         }
     }
 }
