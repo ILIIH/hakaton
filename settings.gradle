@@ -14,4 +14,8 @@ dependencyResolutionManagement {
 }
 rootProject.name = "UAref"
 include ':app'
+include ':auth-ui'
+include ':auth-data'
+include ':core'
+include ':auth-domain'
 include ':core-ui'
