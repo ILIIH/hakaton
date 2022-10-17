@@ -1,4 +1,4 @@
-package com.example.uaref
+package com.uaref
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package com.example.uaref.di
+package com.uaref.di
 
 import android.app.Application
 import com.example.auth_data.di.authDataModule
