@@ -1,6 +1,6 @@
 package com.example.auth_data.di
 
-import com.example.auth_data.repository.authApi
+import com.example.auth_data.repository.authRepositoryImp
 import com.example.auth_domain.models.repository.authRepository
 import com.example.auth_domain.models.usecases.getUser
 import com.example.auth_domain.models.usecases.login
@@ -9,7 +9,7 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
 val authDataModule = module {
-    single<authRepository> { authApi(androidContext()) }
+    single<authRepository> { authRepositoryImp(androidContext()) }
     single {
         login(get())
     }

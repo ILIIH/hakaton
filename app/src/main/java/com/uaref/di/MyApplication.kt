@@ -3,6 +3,8 @@ package com.uaref.di
 import android.app.Application
 import com.example.auth_data.di.authDataModule
 import com.example.auth_ui.di.authModule
+import com.example.servise_review_ui.di.serviseReviewModule
+import com.example.servise_reviw_data.di.serviseReviewDataModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
 
@@ -17,6 +19,8 @@ class MyApplication : Application() {
                 appModule,
                 authModule,
                 authDataModule,
+                serviseReviewDataModel,
+                serviseReviewModule
                 homeModule,
                 homeDomainModule,
                 homeDataModule,

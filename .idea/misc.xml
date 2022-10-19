@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/auth-ui/src/main/res/drawable/rounded.xml" value="0.123" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/auth-ui/src/main/res/drawable/rounded_facebook.xml" value="0.124" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/auth-ui/src/main/res/layout/fragment_greetings.xml" value="0.264" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/auth-ui/src/main/res/layout/fragment_login.xml" value="0.4" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/auth-ui/src/main/res/layout/fragment_sign_up.xml" value="0.176" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/servise-review-ui/src/main/res/drawable-v24/rounded.xml" value="0.1945" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/servise-review-ui/src/main/res/drawable/card_layout.xml" value="0.1945" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/servise-review-ui/src/main/res/layout/fragment_servise_review.xml" value="0.264" />
+        <entry key="..\:/ILLIA/hakaton/project/androidProject/servise-review-ui/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+=======
         <entry key="..\:/ILLIA/hakaton/project/androidProject/app/src/main/res/layout/activity_main.xml" value="0.2210144927536232" />
         <entry key="..\:/Users/maksi/StudioProjects/hakaton/ad-ui/src/main/res/layout/fragment_ad.xml" value="0.24947916666666667" />
         <entry key="..\:/Users/maksi/StudioProjects/hakaton/app/src/main/res/drawable/ic_ad.xml" value="0.146" />
@@ -24,6 +36,7 @@
         <entry key="..\:/Users/maksi/StudioProjects/hakaton/profile-ui/src/main/res/layout/fragment_profile.xml" value="0.109375" />
         <entry key="..\:/Users/maksi/StudioProjects/hakaton/profile-ui/src/main/res/layout/fragment_search.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/maksi/StudioProjects/hakaton/search-ui/src/main/res/layout/fragment_search.xml" value="0.24947916666666667" />
+>>>>>>> 008e1fba45965e2fbf858d926ed9b7b4bced380d
       </map>
     </option>
   </component>
