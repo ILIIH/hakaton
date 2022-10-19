@@ -13,7 +13,7 @@ import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
-class authApi(private val context: Context) : authRepository {
+class authRepositoryImp(private val context: Context) : authRepository {
 
     @RequiresApi(Build.VERSION_CODES.M)
     val masterKeyAlias: String = MasterKeys.getOrCreate(MasterKeys.AES256_GCM_SPEC)
