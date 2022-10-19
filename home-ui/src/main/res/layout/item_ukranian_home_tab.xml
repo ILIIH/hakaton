@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="human"
+            type="com.uaref.viewState.UkrainianViewState" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="@{()->human.onClick(human.id)}"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="@dimen/normal_200">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/normal_75">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/avatar"
+                android:layout_width="@dimen/normal_700"
+                android:layout_height="@dimen/normal_700"
+                android:layout_margin="@dimen/normal_100"
+                android:srcImage="@{human.imageURL}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@color/purple_200" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_100"
+                android:fontFamily="@font/dm_sans_bold"
+                android:text="@{human.name}"
+                android:textSize="@dimen/normal_sp_100"
+                app:layout_constraintEnd_toEndOf="@id/avatar"
+                app:layout_constraintStart_toStartOf="@id/avatar"
+                app:layout_constraintTop_toBottomOf="@id/avatar"
+                tools:text="Joe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_25"
+                android:layout_marginBottom="@dimen/normal_750"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="@{human.description}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_sp_75"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name"
+                tools:text="English" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

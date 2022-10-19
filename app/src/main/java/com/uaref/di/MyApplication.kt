@@ -21,6 +21,9 @@ class MyApplication : Application() {
                 authDataModule,
                 serviseReviewDataModel,
                 serviseReviewModule
+                homeModule,
+                homeDomainModule,
+                homeDataModule,
             )
         }
     }

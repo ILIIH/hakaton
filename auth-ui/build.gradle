@@ -41,12 +41,10 @@ android {
 
 dependencies {
     implementation project(':core')
+    implementation project(':core-ui')
     implementation project(':auth-domain')
     implementation project(':servise-review-ui')
 
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'com.facebook.android:facebook-android-sdk:9.1.1'
-
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.1'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.1'
 }

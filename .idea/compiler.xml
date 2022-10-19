@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="UAref.ad-ui" target="11" />
+      <module name="UAref.app" target="11" />
+      <module name="UAref.auth-data" target="11" />
+      <module name="UAref.auth-domain" target="11" />
+      <module name="UAref.auth-ui" target="11" />
+      <module name="UAref.core" target="11" />
+      <module name="UAref.core-ui" target="11" />
+      <module name="UAref.home-data" target="11" />
+      <module name="UAref.home-ui" target="11" />
+      <module name="UAref.profile-ui" target="11" />
+      <module name="UAref.search-ui" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

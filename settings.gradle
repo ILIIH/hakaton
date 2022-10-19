@@ -6,19 +6,34 @@ pluginManagement {
     }
 }
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
 }
 rootProject.name = "UAref"
 include ':app'
+include ':core-ui'
+include ':core'
+
 include ':auth-ui'
 include ':auth-data'
-include ':core'
 include ':auth-domain'
+
 include ':core-ui'
 include ':servise-review-ui'
 include ':servise-review-data'
 include ':servise-review-domain'
+
+
+include ':home-ui'
+include ':home-domain'
+include ':home-data'
+
+
+include ':search-ui'
+include ':profile-ui'
+include ':ad-ui'
+
