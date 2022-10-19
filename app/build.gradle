@@ -29,6 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    dataBinding {
+        enabled = true
+    }
 
     buildFeatures {
         viewBinding true
@@ -47,4 +50,13 @@ dependencies {
     implementation project(':home-ui')
     implementation project(':home-domain')
     implementation project(':home-data')
+
+    implementation project(':search-ui')
+
+    implementation project(':ad-ui')
+
+    implementation project(':profile-ui')
+
+    implementation 'com.github.ismaeldivita:chip-navigation-bar:1.3.4'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.10'
 }

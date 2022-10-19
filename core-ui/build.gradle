@@ -36,6 +36,9 @@ android {
 }
 
 dependencies {
+    api "androidx.navigation:navigation-fragment-ktx:$nav_fragment"
+    api "androidx.navigation:navigation-ui-ktx:$nav_fragment"
+
     api "androidx.fragment:fragment-ktx:$fragment_ktx_version"
     api "androidx.appcompat:appcompat:$appcompat"
     api "com.google.android.material:material:$android_material"
