@@ -104,6 +104,6 @@
 
     <dimen name="normal_sp_225">36sp</dimen>
     <dimen name="normal_sp_250">40sp</dimen>
-    <dimen name="normal_sp_375">44sp</dimen>
-    <dimen name="normal_sp_400">48sp</dimen>
+    <dimen name="normal_sp_275">44sp</dimen>
+    <dimen name="normal_sp_300">48sp</dimen>
 </resources>

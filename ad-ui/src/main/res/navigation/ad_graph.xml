@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_ad"
+    app:startDestination="@id/adFragment">
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="com.uaref.AdFragment"
+        android:label="AdFragment" />
+</navigation>

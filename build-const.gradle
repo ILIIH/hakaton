@@ -10,4 +10,5 @@ ext {
     fragment_ktx_version = '1.5.3'
     nav_fragment = '2.5.2'
     picasso_version = '2.4.0'
+    chip_navigation_bar = '1.4.0'
 }
