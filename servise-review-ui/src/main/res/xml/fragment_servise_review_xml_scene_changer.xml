@@ -77,30 +77,30 @@
             motion:layout_constraintStart_toStartOf="@+id/available_time_title"
             android:layout_marginTop="12dp"
             android:visibility="gone" />
-        <Constraint
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Joe"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            motion:layout_constraintStart_toStartOf="@+id/backButton"
+            motion:layout_constraintTop_toBottomOf="@+id/backButton"
+            android:visibility="gone"/>
+
+
+        <TextView
             android:id="@+id/available_time_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/surname"
-            motion:layout_constraintStart_toStartOf="@+id/surname"
-            android:layout_marginTop="25dp"
-            android:visibility="gone" />
-        <Constraint
-            android:id="@+id/surname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/name"
-            motion:layout_constraintStart_toStartOf="@+id/name"
-            android:layout_marginTop="10dp"
-            android:visibility="gone" />
-        <Constraint
-            android:id="@+id/name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            motion:layout_constraintTop_toBottomOf="@+id/backButton"
-            motion:layout_constraintStart_toStartOf="@+id/backButton"
-            android:layout_marginTop="36dp"
-            android:visibility="gone" />
+            android:layout_marginTop="5dp"
+            android:text="Available Time"
+            motion:layout_constraintStart_toStartOf="@+id/username"
+            motion:layout_constraintTop_toBottomOf="@+id/username"
+            android:visibility="gone"/>
+
         <Constraint
             android:layout_height="150dp"
             android:layout_width="150dp"

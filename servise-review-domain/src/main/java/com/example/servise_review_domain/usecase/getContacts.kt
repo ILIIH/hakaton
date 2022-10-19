@@ -1,7 +1,7 @@
 package com.example.servise_review_domain.usecase
 
-import com.example.servise_review_domain.repository.seviseRegistrateRepository
+import com.example.servise_review_domain.repository.seviseReviewRepository
 
-class getContacts constructor(private val repository: seviseRegistrateRepository) {
-    suspend fun execute(username: String) = repository.getComments(username)
+class getComments constructor(private val repository: seviseReviewRepository) {
+    suspend fun execute(username: String) = repository.getCommentsByUsername(username)
 }

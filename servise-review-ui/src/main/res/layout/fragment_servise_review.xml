@@ -28,7 +28,6 @@
             android:background="@drawable/card_layout"
             android:elevation="3dp"
             android:orientation="vertical"
-            app:layoutDescription="@xml/fragment_servise_review_xml_title_description_scene"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -103,7 +102,7 @@
 
 
         <TextView
-            android:id="@+id/name"
+            android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
@@ -114,26 +113,15 @@
             app:layout_constraintStart_toStartOf="@+id/backButton"
             app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
-        <TextView
-            android:id="@+id/surname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/dm_sans_bold"
-            android:text="Barrett`s"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:layout_constraintStart_toStartOf="@+id/name"
-            app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <TextView
             android:id="@+id/available_time_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="5dp"
             android:text="Available Time"
-            app:layout_constraintStart_toStartOf="@+id/surname"
-            app:layout_constraintTop_toBottomOf="@+id/surname" />
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
 
         <CheckBox
             android:id="@+id/checkBox1"
