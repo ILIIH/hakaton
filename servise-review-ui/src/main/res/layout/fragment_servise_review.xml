@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondGrey"
+        app:layoutDescription="@xml/fragment_servise_review_xml_scene_changer">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="316dp"
+            android:src="@drawable/jor_photo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/title_description"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/card_layout"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            app:layoutDescription="@xml/fragment_servise_review_xml_title_description_scene"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/Speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="English tutor"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="28dp"
+                android:text="Hello! I am twenty-five years old and I love helping people. I graduated from Dublin University of Linguology and I speak English very well. I would be happy to help you learn English both online and offline"
+                android:textSize="16sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/coments_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/get_started_button"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/rounded"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/button_start_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dm_sans_bold"
+                    android:gravity="center"
+                    android:text="ASK ABOUT HELP"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_arrow_long_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Joe"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/backButton"
+            app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+        <TextView
+            android:id="@+id/surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Barrett`s"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/available_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Available Time"
+            app:layout_constraintStart_toStartOf="@+id/surname"
+            app:layout_constraintTop_toBottomOf="@+id/surname" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="18:00-21:00"
+            app:layout_constraintStart_toStartOf="@+id/available_time_title"
+            app:layout_constraintTop_toBottomOf="@+id/available_time_title"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="12:00-13:00"
+            app:layout_constraintStart_toStartOf="@+id/checkBox1"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox1"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="01:00-00:00"
+            app:layout_constraintStart_toStartOf="@+id/available_time_title"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+</layout>

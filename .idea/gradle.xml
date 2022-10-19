@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/auth-ui" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/servise-review-ui" />
           </set>
         </option>
       </GradleProjectSettings>

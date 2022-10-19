@@ -27,8 +27,9 @@ class LoginFragment : Fragment() {
         viewModel._curUser.observe(requireActivity()) {
             when (it) {
                 is loginState.Success -> {
-                    // navigation
+                    // navigation+
                     Toast.makeText(context, "Sucess ", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(com.example.servise_review_ui.R.id.servise_review_navigation)
                 }
                 is loginState.Error -> {
                     Toast.makeText(context, it.error.toString(), Toast.LENGTH_SHORT).show()
