@@ -5,5 +5,9 @@ ext {
     constraint_layout = "2.1.4"
     koin_version= "3.2.2"
     koin_android_version= "3.2.2"
-
+    lifecycle_livedata = '2.5.1'
+    coroutines_android = '1.6.1'
+    fragment_ktx_version = '1.5.3'
+    nav_fragment = '2.5.2'
+    picasso_version = '2.4.0'
 }

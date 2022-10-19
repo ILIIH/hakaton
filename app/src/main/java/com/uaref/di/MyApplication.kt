@@ -16,7 +16,10 @@ class MyApplication : Application() {
             modules(
                 appModule,
                 authModule,
-                authDataModule
+                authDataModule,
+                homeModule,
+                homeDomainModule,
+                homeDataModule,
             )
         }
     }

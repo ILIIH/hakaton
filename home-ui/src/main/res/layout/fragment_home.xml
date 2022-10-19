@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.uaref.viewModel.HomeViewModel" />
+
+        <import type="com.uaref.adapter.Decorations" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_200"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="@string/european_who_want_to_help"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_sp_100"
+            tools:textColor="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_europeans"
+            items="@{viewModel.europeansList}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_1650"
+            android:layout_marginStart="@dimen/normal_200"
+            android:layout_marginTop="@dimen/normal_100"
+            android:orientation="horizontal"
+            app:addItemDecoration="@{Decorations.spaces(@dimen/normal_100, false)}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_european_home_tab" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_200"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="@string/ukranians_who_want_to_help"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_sp_100"
+            tools:textColor="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_ukranians"
+            items="@{viewModel.ukrainiansList}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_1300"
+            android:layout_marginStart="@dimen/normal_200"
+            android:layout_marginTop="@dimen/normal_100"
+            android:orientation="horizontal"
+            app:addItemDecoration="@{Decorations.spaces(@dimen/normal_100, false)}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_ukranian_home_tab" />
+
+    </LinearLayout>
+</layout>

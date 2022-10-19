@@ -39,16 +39,12 @@ android {
 dependencies {
 
     implementation project(':core')
-    implementation project(':auth-ui')
-    implementation project(':auth-data')
     implementation project(':core-ui')
 
-    implementation "androidx.core:core-ktx:$core_ktx"
-    implementation "androidx.appcompat:appcompat:$appcompat"
-    implementation "com.google.android.material:material:$android_material"
-    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout"
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.2'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.5.2'
+    implementation project(':auth-ui')
+    implementation project(':auth-data')
 
-
+    implementation project(':home-ui')
+    implementation project(':home-domain')
+    implementation project(':home-data')
 }
