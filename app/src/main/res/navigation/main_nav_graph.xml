@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/tab_home">
+    app:startDestination="@id/auth_nav">
 
     <include app:graph="@navigation/auth_nav" />
 

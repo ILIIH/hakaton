@@ -7,13 +7,13 @@ internal class EuropeansFactory {
         return listOf(
             European(
                 1,
-                "https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=600",
+                "https://www.linkpicture.com/q/jor_photo.png",
                 "Joe",
                 "English"
             ),
             European(
-                2,
-                "https://images.pexels.com/photos/2449600/pexels-photo-2449600.png?auto=compress&cs=tinysrgb&w=600",
+                1,
+                "https://www.linkpicture.com/q/jor_photo.png",
                 "Joe",
                 "English"
             )
