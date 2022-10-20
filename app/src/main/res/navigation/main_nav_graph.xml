@@ -10,7 +10,7 @@
 
     <include app:graph="@navigation/home_nav" />
     <include app:graph="@navigation/search_graph" />
-    <include app:graph="@navigation/ad_graph" />
+    <include app:graph="@navigation/service_graph" />
     <include app:graph="@navigation/profile_graph" />
 
 </navigation>

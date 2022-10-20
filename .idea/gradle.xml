@@ -22,6 +22,8 @@
             <option value="$PROJECT_DIR$/home-ui" />
             <option value="$PROJECT_DIR$/profile-ui" />
             <option value="$PROJECT_DIR$/search-ui" />
+            <option value="$PROJECT_DIR$/service-domain" />
+            <option value="$PROJECT_DIR$/service-ui" />
             <option value="$PROJECT_DIR$/servise-review-data" />
             <option value="$PROJECT_DIR$/servise-review-domain" />
             <option value="$PROJECT_DIR$/servise-review-ui" />

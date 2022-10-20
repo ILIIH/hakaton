@@ -35,5 +35,5 @@ include ':home-data'
 
 include ':search-ui'
 include ':profile-ui'
-include ':ad-ui'
-
+include ':service-ui'
+include ':service-domain'

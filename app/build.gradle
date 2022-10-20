@@ -54,6 +54,9 @@ dependencies {
     implementation project(':home-data')
 
     implementation project(':search-ui')
+
+    implementation project(':service-ui')
+
     implementation project(':ad-ui')
     implementation project(':profile-ui')
 

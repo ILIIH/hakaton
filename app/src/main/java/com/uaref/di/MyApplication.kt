@@ -25,6 +25,7 @@ class MyApplication : Application() {
                 serviseReviewModule,
                 homeDomainModule,
                 homeDataModule,
+                serviceModule
                 homeModule
             )
         }

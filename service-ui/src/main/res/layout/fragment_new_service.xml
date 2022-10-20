@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.uaref.viewModel.NewServiceViewModel" />
+
+        <import type="com.uaref.adapter.Decorations" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_200"
+            android:layout_marginTop="@dimen/normal_250">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_text_view_skills"
+                android:elevation="@dimen/normal_12"
+                android:hint="@string/enter_your_skills_hint"
+                android:paddingVertical="@dimen/normal_75"
+                android:paddingStart="@dimen/normal_100"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/normal_sp_100" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:elevation="@dimen/normal_25"
+                android:padding="@dimen/normal_100"
+                android:src="@drawable/ic_search" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_200"
+            android:layout_marginTop="@dimen/normal_75"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            tools:listitem="@layout/item_skills" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_200"
+            android:layout_marginVertical="@dimen/normal_75"
+            android:text="@string/describe_your_experience_label" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/normal_700"
+            android:layout_marginHorizontal="@dimen/normal_200"
+            android:layout_marginTop="@dimen/normal_100"
+            android:background="@drawable/view_border"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_200"
+            android:text="@string/choose_time_label" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            items="@{viewModel.appointmentsList}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/normal_200"
+            android:layout_marginTop="@dimen/normal_100"
+            app:addItemDecoration="@{Decorations.spaces(@dimen/normal_75, true)}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_choose_time" />
+    </LinearLayout>
+</layout>
