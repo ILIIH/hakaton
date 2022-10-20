@@ -28,8 +28,7 @@ class SignUpFragment : Fragment() {
         viewModel._curUser.observe(requireActivity()) {
             when (it) {
                 is loginState.Success -> {
-                    // navigation
-                    Toast.makeText(context, "Sucess ", Toast.LENGTH_SHORT).show()
+                    findNavController().navigate(com.uaref.home_ui.R.id.tab_home)
                 }
                 is loginState.Error -> {
                     Toast.makeText(context, it.error.toString(), Toast.LENGTH_SHORT).show()

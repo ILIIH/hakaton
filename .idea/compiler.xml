@@ -15,5 +15,6 @@
       <module name="UAref.search-ui" target="11" />
       <module name="UAref.service-ui" target="11" />
     </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7" />
   </component>
 </project>
