@@ -1,0 +1,5 @@
+int id adFragment 0x0
+int id tab_ad 0x0
+int layout fragment_ad 0x0
+int navigation ad_graph 0x0
+int string ad 0x0

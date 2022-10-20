@@ -1,0 +1,6 @@
+com.example.ad_ui
+id adFragment
+id tab_ad
+layout fragment_ad
+navigation ad_graph
+string ad

@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+id adFragment
+id tab_ad
+layout fragment_ad
+navigation ad_graph
+string ad

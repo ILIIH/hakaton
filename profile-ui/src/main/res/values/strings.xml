@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">profile-ui</string>
     <string name="profile">Profile</string>
+    <string name="contacted">contacted</string>
+    <string name="contacted1">CONTACTED</string>
+    <string name="those_people_need_your_help">Those people need your help!</string>
 </resources>
