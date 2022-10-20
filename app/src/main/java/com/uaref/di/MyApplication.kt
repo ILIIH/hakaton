@@ -7,6 +7,8 @@ import com.example.servise_review_ui.di.serviseReviewModule
 import com.example.servise_reviw_data.di.serviseReviewDataModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.GlobalContext.startKoin
+import com.uaref.di.homeModule
+
 
 class MyApplication : Application() {
 
@@ -20,10 +22,10 @@ class MyApplication : Application() {
                 authModule,
                 authDataModule,
                 serviseReviewDataModel,
-                serviseReviewModule
-                homeModule,
+                serviseReviewModule,
                 homeDomainModule,
                 homeDataModule,
+                homeModule
             )
         }
     }

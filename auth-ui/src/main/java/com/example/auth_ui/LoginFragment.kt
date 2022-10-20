@@ -12,6 +12,7 @@ import com.example.auth_domain.models.models.userDomain
 import com.example.auth_ui.databinding.FragmentLoginBinding
 import com.example.auth_ui.viewModel.authViewModel
 import org.koin.android.ext.android.inject
+import com.uaref.home_ui.R
 
 class LoginFragment : Fragment() {
 
@@ -29,7 +30,7 @@ class LoginFragment : Fragment() {
                 is loginState.Success -> {
                     // navigation+
                     Toast.makeText(context, "Sucess ", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(com.example.servise_review_ui.R.id.servise_review_navigation)
+                    findNavController().navigate(R.id.tab_home)
                 }
                 is loginState.Error -> {
                     Toast.makeText(context, it.error.toString(), Toast.LENGTH_SHORT).show()
@@ -48,7 +49,7 @@ class LoginFragment : Fragment() {
         }
 
         view.signUpButton.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
+            findNavController().navigate(com.example.auth_ui.R.id.action_loginFragment_to_signUpFragment)
         }
 
         return view.root

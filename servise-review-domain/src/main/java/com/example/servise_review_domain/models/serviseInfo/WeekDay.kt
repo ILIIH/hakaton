@@ -1,4 +1,4 @@
-package com.example.servise_review_domain.models
+package com.example.servise_review_domain.models.serviseInfo
 
 enum class weekDay {
     Mon,

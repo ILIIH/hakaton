@@ -4,7 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
+import androidx.navigation.fragment.findNavController
+import com.example.servise_review_ui.R
 import com.uaref.home_ui.databinding.FragmentHomeBinding
 import com.uaref.viewModel.HomeViewModel
 import org.koin.android.ext.android.inject
@@ -32,16 +33,18 @@ internal class HomeFragment : BaseFragment(), HasLifeCycleObserver {
         super.onViewCreated(view, savedInstanceState)
         viewModel.events.observe(viewLifecycleOwner) {
             when (it) {
-                is HomeViewModel.Event.OnClickEuropean -> Toast.makeText(
-                    context,
-                    "Open profile (ID:${it.id}, European)",
-                    Toast.LENGTH_SHORT
-                ).show()
-                is HomeViewModel.Event.OnClickUkrainian -> Toast.makeText(
-                    context,
-                    "Open profile (ID:${it.id}, Ukrainian)",
-                    Toast.LENGTH_SHORT
-                ).show()
+                is HomeViewModel.Event.OnClickEuropean -> {
+                    val bundle = Bundle()
+                    bundle.putString("type", "European")
+                    bundle.putInt("id", it.id)
+                    findNavController().navigate(R.id.servise_review_navigation, bundle)
+                }
+                is HomeViewModel.Event.OnClickUkrainian -> {
+                    val bundle = Bundle()
+                    bundle.putString("type", "Ukrainian")
+                    bundle.putInt("id", it.id)
+                    findNavController().navigate(R.id.servise_review_navigation, bundle)
+                }
             }
         }
     }

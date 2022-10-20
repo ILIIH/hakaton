@@ -43,7 +43,7 @@ dependencies {
     implementation project(':core')
     implementation project(':core-ui')
     implementation project(':auth-domain')
-    implementation project(':servise-review-ui')
+    implementation project(':home-ui')
 
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'com.facebook.android:facebook-android-sdk:9.1.1'

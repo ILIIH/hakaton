@@ -7,6 +7,26 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ad-ui" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/auth-data" />
+            <option value="$PROJECT_DIR$/auth-domain" />
+            <option value="$PROJECT_DIR$/auth-ui" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/home-data" />
+            <option value="$PROJECT_DIR$/home-domain" />
+            <option value="$PROJECT_DIR$/home-ui" />
+            <option value="$PROJECT_DIR$/profile-ui" />
+            <option value="$PROJECT_DIR$/search-ui" />
+            <option value="$PROJECT_DIR$/servise-review-data" />
+            <option value="$PROJECT_DIR$/servise-review-domain" />
+            <option value="$PROJECT_DIR$/servise-review-ui" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
