@@ -2,10 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/tab_ad"
-    app:startDestination="@id/adFragment">
+    app:startDestination="@id/addNewService">
 
     <fragment
-        android:id="@+id/adFragment"
-        android:name="com.uaref.AdFragment"
+        android:id="@+id/addNewService"
+        android:name="com.uaref.fragment.NewServiceFragment"
         android:label="AdFragment" />
 </navigation>

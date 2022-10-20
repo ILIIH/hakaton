@@ -21,7 +21,7 @@
     <item
         android:id="@+id/tab_ad"
         android:icon="@drawable/ic_ad"
-        android:title="@string/ad"
+        android:title="@string/service"
         app:cnb_backgroundColor="@color/main_color"
         app:cnb_iconColor="@color/black"
         app:cnb_textColor="@color/black" />

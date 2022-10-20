@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="1.7">
-      <module name="UAref.ad-ui" target="11" />
+      <module name="UAref.ad_ui" target="11" />
       <module name="UAref.app" target="11" />
       <module name="UAref.auth-data" target="11" />
       <module name="UAref.auth-domain" target="11" />
@@ -13,6 +13,7 @@
       <module name="UAref.home-ui" target="11" />
       <module name="UAref.profile-ui" target="11" />
       <module name="UAref.search-ui" target="11" />
+      <module name="UAref.service-ui" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service">New service</string>
+    <string name="enter_your_skills_hint">Enter your skills</string>
+    <string name="describe_your_experience_label">Describe your experience</string>
+    <string name="choose_time_label">Choose time</string>
+    <string name="data_label">Data</string>
+    <string name="time_label">Time</string>
+    <string name="sunday">Sunday</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="day_not_select">Select day</string>
+    <string name="add_time_label">Add time</string>
+</resources>

@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="ad">Ad</string>
+    <item name="tab_service" type="id"/>
 </resources>
