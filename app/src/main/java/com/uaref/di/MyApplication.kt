@@ -20,6 +20,7 @@ class MyApplication : Application() {
                 homeModule,
                 homeDomainModule,
                 homeDataModule,
+                serviceModule
             )
         }
     }

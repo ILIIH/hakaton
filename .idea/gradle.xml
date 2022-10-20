@@ -10,7 +10,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ad-ui" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/auth-data" />
             <option value="$PROJECT_DIR$/auth-domain" />
@@ -22,6 +21,8 @@
             <option value="$PROJECT_DIR$/home-ui" />
             <option value="$PROJECT_DIR$/profile-ui" />
             <option value="$PROJECT_DIR$/search-ui" />
+            <option value="$PROJECT_DIR$/service-domain" />
+            <option value="$PROJECT_DIR$/service-ui" />
           </set>
         </option>
       </GradleProjectSettings>
